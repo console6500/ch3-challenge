@@ -103,4 +103,4 @@ jobs:
       id-token: write
     steps:
       - name: test
-        run: echo "Tests go here"
+        run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
